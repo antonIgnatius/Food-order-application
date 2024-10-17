@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="log.html">Login</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+
+        <div id="login-section">
+            <h3>Admin Login</h3>
+            <form id="adminLoginForm">
+                <label for="adminUsername">Username:</label>
+                <input type="text" id="adminUsername" required>
+                <label for="adminPassword">Password:</label>
+                <input type="password" id="adminPassword" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div id="order-section" style="display:none;">
+            <h3>Food Orders</h3>
+            <div id="order-list"></div> <!-- Placeholder for order list -->
+            <button id="cancelOrder" class="button">Cancel Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Order Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Audio element for notification sound -->
+    <audio id="notificationSound" src="assets/sounds/ding-126626.mp3"></audio>
+
+    <script src="admin.js"></script> 
+    <script>
+        // Call displayOrders when the page loads
+        window.onload = displayOrders;
+    </script><!-- Admin JS file -->
+</body>
+</html>

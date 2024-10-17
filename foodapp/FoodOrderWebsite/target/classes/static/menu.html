@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Our Menu</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="log.html">Login</a></li>
+				<li><a href="admin.html">Admin</a></li> 
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Our Delicious Menu</h2>
+        <div id="food-items" class="food-items-container"></div>
+
+        <div id="order-summary">
+            <h3>Order Summary</h3>
+            <div id="selected-items"></div>
+            <p id="total-price">Total Price: $0.00</p>
+            <button id="place-order" class="button" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Order Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

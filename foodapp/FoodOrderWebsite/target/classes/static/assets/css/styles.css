@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #e63946; /* KFC-like red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items */
+}
+
+nav li {
+    margin: 0 15px; /* Space between items */
+}
+
+nav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+nav a:hover {
+    background-color: #457b9d; /* Blue accent on hover */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto; /* Adjust the height automatically */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem; /* Larger title */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Larger subtitle */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Added margin for spacing */
+    padding: 20px;
+}
+
+.food-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px; /* Spacing below food items */
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition for scaling and shadow */
+    width: 250px; /* Fixed width for consistency */
+}
+
+.food-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.food-item img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    border-radius: 10px;
+}
+
+h3, p {
+    margin: 10px 0; /* Add margin to headings and paragraphs */
+}
+
+.button {
+    background-color: #457b9d; /* Blue accent */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.button:hover {
+    background-color: #1d3557; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e63946; /* KFC-like red */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* New styles for the login form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Max width for the form */
+    margin: 20px auto; /* Center the form */
+}
+
+label {
+    margin: 10px 0 5px; /* Spacing for labels */
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing below input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#loginMessage {
+    color: red; /* Red for error messages */
+    text-align: center; /* Center the message */
+}
+
+/* Styles for the map section */
+#googleMap {
+    border: 2px solid #457b9d; /* Border around the map */
+    border-radius: 10px; /* Rounded corners for the map */
+}
+
+/* Styles for contact form */
+#contactMessage {
+    color: green; /* Green for success messages */
+    text-align: center; /* Center the message */
+}
+
+/* New styles for order summary */
+.order-summary {
+    background-color: #ffffff; /* White background for contrast */
+    border: 2px solid #e63946; /* Border color matching the theme */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the summary */
+    margin-top: 20px; /* Spacing above the summary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.order-summary h2 {
+    color: #e63946; /* Heading color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.order-summary p {
+    margin: 5px 0; /* Space between items */
+}
+
+.order-summary .total {
+    font-weight: bold; /* Bold total amount */
+    font-size: 1.2rem; /* Larger font size for total */
+    color: #457b9d; /* Accent color for total */
+}
+
+.container h2 {
+    color: #e63946;
+    margin-top: 20px;
+}
